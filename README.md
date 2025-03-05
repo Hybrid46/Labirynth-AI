@@ -1,6 +1,6 @@
 Labyrinth AI - Neural Network Pathfinding
 
-Labyrinth Example <!-- Add an image if you have one -->
+Labyrinth Example
 
 This project implements a neural network-based AI to solve labyrinth pathfinding problems. The AI learns to navigate through randomly generated labyrinths, avoiding obstacles and finding the shortest path to the goal. The neural network is trained using a combination of Q-learning and backpropagation.
 
@@ -29,23 +29,17 @@ Features
 Installation
 
     Clone the Repository:
-    bash
-    Copy
 
     git clone https://github.com/your-username/labyrinth-ai.git
     cd labyrinth-ai
 
     Install Dependencies:
     Ensure you have Python 3.7+ installed. Install the required libraries using:
-    bash
-    Copy
 
     pip install numpy matplotlib
 
     Run the Program:
     Execute the main script to start the program:
-    bash
-    Copy
 
     python LabirynthAI_v2.py
 
@@ -67,8 +61,6 @@ Testing the AI
 Visualizing the Network
 
 Run the visualization script to see the weights and biases of the trained network:
-bash
-Copy
 
 python visualize_network.py
 
@@ -103,26 +95,20 @@ visualize_network.py
 
 Example
 Training
-bash
-Copy
 
 Choose mode (learn/test): learn
-Enable verbose mode? (y/n): n
+Enable verbose mode? (y/n): y
 Enter number of episodes (default: 1000): 500
-Enter minimum exploration rate (default: 0.01): 0.01
+Enter minimum exploration rate (default: 0.01): 0.24
 Enter initial learning rate (default: 0.5): 0.5
 Enter learning rate decay (default: 0.995): 0.995
-Enter minimum learning rate (default: 0.01): 0.01
+Enter minimum learning rate (default: 0.01): 0.12
 
 Testing
-bash
-Copy
 
 Choose mode (learn/test): test
 
 Visualization
-bash
-Copy
 
 python visualize_network.py
 
@@ -139,25 +125,24 @@ The labyrinth is represented as a grid where:
     O represents the goal.
 
 Example labyrinth at the start of training:
-Copy
-
+```
 A . . # . .
 . . # . # .
 # . . . . .
 . # . # . .
 . . . . # .
 # . # . . .
-
+```
 Example labyrinth at the end of training (goal reached):
 Copy
-
+```
 . . . # . .
 . . # . # .
 # . . . . .
 . # . # . .
 . . . . # .
 # . # . A O
-
+```
 Contributing
 
 Contributions are welcome! If you'd like to contribute, please follow these steps:
