@@ -134,7 +134,6 @@ A . . # . .
 # . # . . .
 ```
 Example labyrinth at the end of training (goal reached):
-Copy
 ```
 . . . # . .
 . . # . # .
